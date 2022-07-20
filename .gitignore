@@ -1,0 +1,11 @@
+# Garbage files
+.DS_Store
+.vscode
+./vscode
+./.vscode
+# Dependency directory
+node_modules
+./node_modules
+# Logs
+logs
+*.log
