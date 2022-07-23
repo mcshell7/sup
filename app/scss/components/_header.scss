@@ -31,6 +31,7 @@
     font-weight: 800;
     font-size: 40px;
     line-height: 46px;
+    margin-bottom: 15px;
   }
   &-subtitle{
     margin-bottom: 5px;
@@ -40,6 +41,35 @@
   }
   &-link{
     margin-bottom: 20px;
+  } 
+}
+.slider-dots{
+  position: absolute;
+  bottom: 36px;
+  right: 50px;
+  width: 100%;
+  max-width: 920px;
+  color: #fff;
+  .slick-current{
+    .dots-box{
+      border-color: $green;
+    }
   }
-  
+}
+.dots-box{
+  width: 200px;
+  height: 32px;
+  border-top: 4px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__number{
+    margin-top: 6px;
+    font-weight: 800;
+    font-size: 24px;
+  }
+  &__name{
+    font-weight: 300;
+    line-height: 19px;
+  }
 }
