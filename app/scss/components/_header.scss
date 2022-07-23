@@ -1,6 +1,45 @@
 .header{
-  &__slider{
-    
+  position: relative;
+  height: 100vh;
+}
+.header__slider{
+  &-item{
+    color: #fff;
+    height: 100vh;
+    background-image: url(../../img/header-slider-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  width: 100%;
+}
+.header-slider__info{
+  text-align: right;
+  right: 80px;
+  bottom: 116px;
+  position: absolute;  
+  text-transform: uppercase;
+  &-title{
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 86px;
+    color: #FFFFFF;
+    margin-bottom: 48px;
+  }
+  &-text{
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 46px;
+  }
+  &-subtitle{
+    margin-bottom: 5px;
+  }
+  &-subtext{
+    margin-bottom: 8px;
+  }
+  &-link{
+    margin-bottom: 20px;
   }
   
 }
