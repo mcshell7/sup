@@ -9,20 +9,34 @@
     font-weight: 800;
     font-size: 200px;
     line-height: 156px;
-    text-transform: uppercase;
-    color: #FFFFFF;
     opacity: 0.07;
   }
 }
 .header__slider{
   &-item{
-    color: #fff;
     height: 100vh;
     background-image: url(../../img/header-slider-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+  }
+  .slick-slide{
+    &:nth-child(2){
+      .header__slider-item{
+        background-image: url(../../img/header-slider-2.jpg);
+      }
+    }
+    &:nth-child(3){
+      .header__slider-item{
+        background-image: url(../../img/header-slider-3.jpg);
+      }
+    }
+    &:nth-child(4){
+      .header__slider-item{
+        background-image: url(../../img/header-slider-4.jpg);
+      }
+    }
   }
   width: 100%;
 }
@@ -31,12 +45,10 @@
   right: 80px;
   bottom: 116px;
   position: absolute;  
-  text-transform: uppercase;
   &-title{
     font-weight: 800;
     font-size: 80px;
     line-height: 86px;
-    color: #FFFFFF;
     margin-bottom: 48px;
   }
   &-text{
@@ -45,23 +57,22 @@
     line-height: 46px;
     margin-bottom: 15px;
   }
-  &-subtitle{
+  &-suptitle{
     margin-bottom: 5px;
   }
-  &-subtext{
+  &-suptext{
     margin-bottom: 8px;
   }
   &-link{
     margin-bottom: 20px;
   } 
 }
-.slider-dots{
+.slider-dotshead{
   position: absolute;
   bottom: 36px;
   right: 50px;
   width: 100%;
   max-width: 920px;
-  color: #fff;
   .slick-current{
     .dots-box{
       border-color: $green;
@@ -83,6 +94,7 @@
   &__name{
     font-weight: 300;
     line-height: 19px;
+    text-transform: capitalize;
   }
 }
 
@@ -94,7 +106,6 @@
   border-right: 1px solid rgba(#fff,  .25);
   height: 100%;
   text-align: center;
-  color: #fff;
 }
 .nav{
   margin-bottom: 38px;
@@ -146,6 +157,7 @@
   display: inline-block;
   position: relative;
   padding-left: 19px;
+  text-transform: capitalize;
   &::before{  
     content: "";
     position: absolute;

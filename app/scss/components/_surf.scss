@@ -1,0 +1,87 @@
+.surf{
+  padding: 180px 0 210px;
+  background-image: url('../img/map-pin.svg');
+  background-repeat: no-repeat;
+  background-position: right 200px;
+  background-size: auto;
+  .thin-text{
+    font-weight: 100;
+  }
+  &__subtitle{
+    text-align: right;
+    padding-right: 70px;
+    transform: translateY(-100%);
+  }
+  &-box{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  &-slider{
+    padding-top: 110px;
+  }
+  &-box__inner{
+    width: 100%;
+    min-height: 750px;
+    height: 100%;
+    background: rgba(28, 33, 33, 0.85);
+    padding: 72px 40px 0 40px;
+    position: relative;
+    transition: all 0.5s;
+
+  }
+  .slick-slide{
+    &:nth-child(4n+1){
+      .surf-box{
+        margin-top: 32px;
+      }
+    }
+    &:nth-child(4n+3){
+      .surf-box{
+        margin-top: 89px;
+      }
+    }
+    
+  }
+  .slick-active{
+    cursor: pointer;
+    &.slick-current,&:hover{
+      .surf-box__inner{
+        background: rgba(28, 33, 33, 0.2);
+      }
+      .surf-box__inner-btn{
+        opacity: 1;
+      }
+    }
+  }
+  &-box__inner-title{
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 36px;
+    max-width: 150px;
+    display: block;
+    width: 100%;
+  }
+  &-box__inner-location{
+    position: absolute;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 8px;
+    transform: rotate(-90deg);
+    left: 40px;
+    bottom: 80px;
+    width: 0;
+    height: 0;
+    white-space: nowrap;
+  }
+  &-box__inner-btn{
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+  }
+
+}
