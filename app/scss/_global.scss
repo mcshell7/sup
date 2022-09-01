@@ -53,6 +53,25 @@ h2,h3,h4,h5,h6{
     background-color: #FFFFFF;
   }
 }
+.headline-right{
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 7.33333px;
+  opacity: 0.5;
+  position: relative;
+  margin: 0;
+  padding-right: 103px;
+  display: inline-block;
+  &::before{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 80px;
+    right: 0;
+    top: 50%;
+    background-color: #FFFFFF;
+  }
+}
 .slider-arrows{
   position: absolute;
   top: 40px;
@@ -74,6 +93,7 @@ h2,h3,h4,h5,h6{
     right: 20px;
     font-weight: 800;
     font-size: 200px;
+    line-height: 1;
     color: rgba(#fff, 0.02);
   }
   h3{
@@ -100,6 +120,9 @@ h2,h3,h4,h5,h6{
 .title-section{
   font-size: 40px;
   font-weight: 800;
+  img{
+    display: inline-block;
+  }
 }
 
 .subtitle{
@@ -111,6 +134,18 @@ h2,h3,h4,h5,h6{
   .thin-text{
     font-weight: 100;
   }
+}
+
+.descr{
+  display: inline-block;
+  padding-left: 5px;
+  &__head{
+    padding-right: 10px;
+  }
+  .thin-text{
+    font-weight: 100;
+  }
+  
 }
 
 .btn{
@@ -147,4 +182,10 @@ h2,h3,h4,h5,h6{
       background-size: contain;
     }
   }
+}
+.surf,.travel{
+  padding: 180px 0 210px;
+}
+.travel{
+  padding-bottom: 265px;
 }
